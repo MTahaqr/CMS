@@ -51,6 +51,7 @@ export class SidebarComponent implements OnInit {
     showAllArticle() {
         if (!this.showAllArticles) {
             this.showAllArticles = true;
+            this.showAddArticles = false;
         }
         else {
             this.showAllArticles = false;
@@ -60,6 +61,8 @@ export class SidebarComponent implements OnInit {
     showAddArticle() {
         if (!this.showAddArticles) {
             this.showAddArticles = true;
+            this.showAllArticles = false;
+
         }
         else {
             this.showAddArticles = false;

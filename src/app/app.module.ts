@@ -17,12 +17,14 @@ import { IconsComponent } from './icons/icons.component';
 import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
-import { AllArticlesComponent } from './all-articles/all-articles.component'; 
+import { AllArticlesComponent } from './all-articles/all-articles.component';
 
 import { MatCardModule } from '@angular/material';
-import {MatInputModule} from '@angular/material';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatMenuModule} from '@angular/material';
+import { MatFormFieldModule } from '@angular/material';
+import { MatInputModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatMenuModule } from '@angular/material';
+import { MatDatepickerModule } from '@angular/material';
 import { PublishedComponent } from './published/published.component';
 import { PendingComponent } from './pending/pending.component';
 import { DraftComponent } from './draft/draft.component';
@@ -32,7 +34,6 @@ import { AddBannersComponent } from './add-banners/add-banners.component';
 import { MainComponent } from './main/main.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { LandingComponent } from './landing/landing.component';
-
 
 
 
@@ -68,7 +69,9 @@ import { LandingComponent } from './landing/landing.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    // MatInputModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatInputModule,
     // MatMenuModule,
   ],
   providers: [],
