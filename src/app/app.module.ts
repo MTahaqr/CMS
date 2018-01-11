@@ -27,6 +27,11 @@ import { PublishedComponent } from './published/published.component';
 import { PendingComponent } from './pending/pending.component';
 import { DraftComponent } from './draft/draft.component';
 import { TrashComponent } from './trash/trash.component';
+import { NewArticlesComponent } from './new-articles/new-articles.component';
+import { AddBannersComponent } from './add-banners/add-banners.component';
+import { MainComponent } from './main/main.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { LandingComponent } from './landing/landing.component';
 
 
 
@@ -47,6 +52,11 @@ import { TrashComponent } from './trash/trash.component';
     PendingComponent,
     DraftComponent,
     TrashComponent,
+    NewArticlesComponent,
+    AddBannersComponent,
+    MainComponent,
+    SignInComponent,
+    LandingComponent,
 
   ],
   imports: [
@@ -58,8 +68,8 @@ import { TrashComponent } from './trash/trash.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatInputModule,
-    MatMenuModule,
+    // MatInputModule,
+    // MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

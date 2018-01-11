@@ -16,17 +16,43 @@ import { PublishedComponent } from './published/published.component';
 import { PendingComponent } from './pending/pending.component';
 import { DraftComponent } from './draft/draft.component';
 import { TrashComponent } from './trash/trash.component';
+import { NewArticlesComponent } from './new-articles/new-articles.component';
+import { AddBannersComponent } from './add-banners/add-banners.component';
+import { MainComponent } from './main/main.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 
 
 const routes: Routes = [
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'allArticles', component: AllArticlesComponent },
-  { path: 'pending', component: PendingComponent },
-  { path: 'draft', component: DraftComponent },
-  { path: 'trash', component: TrashComponent },
+  {
+    path: 'dashboard', component: DashboardComponent,
 
+  },
+
+
+  // { path: 'main/allArticles', component: AllArticlesComponent },
+  // { path: 'main/pending', component: PendingComponent },
+  // { path: 'draft', component: DraftComponent },
+  // { path: 'trash', component: TrashComponent },
+  // { path: 'newArticles', component: NewArticlesComponent },
+  // { path: 'addBanners', component: AddBannersComponent },
+  {
+    path: 'main', component: MainComponent,
+    children: [
+      { path: 'dashboard', component: DashboardComponent },
+      
+      { path: 'allArticles', component: AllArticlesComponent },
+      { path: 'published', component: PublishedComponent },
+
+      { path: 'pending', component: PendingComponent },
+      { path: 'draft', component: DraftComponent },
+      { path: 'trash', component: TrashComponent },
+      { path: 'newArticles', component: NewArticlesComponent },
+      { path: 'addBanners', component: AddBannersComponent },
+    ]
+  },
+  { path: 'signIn', component: SignInComponent },
   { path: 'published', component: PublishedComponent },
   { path: 'user-profile', component: UserProfileComponent },
   { path: 'table-list', component: TableListComponent },
@@ -35,7 +61,7 @@ const routes: Routes = [
   { path: 'maps', component: MapsComponent },
   { path: 'notifications', component: NotificationsComponent },
   { path: 'upgrade', component: UpgradeComponent },
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
+  // { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 
 @NgModule({

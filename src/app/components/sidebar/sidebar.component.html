@@ -49,8 +49,7 @@
     <div class="nav-container">
         <ul class="nav">
             <li routerLinkActive="active" class=" ">
-               
-                <a [routerLink]="[menuItems[0].path]">
+                <a routerLink="./dashboard">
                     <i class="material-icons">dashboard</i>
 
                     <p>Dashboard</p>
@@ -68,6 +67,30 @@
                     <p>{{menuItem.title}}</p>
                 </a>
             </li>
+
+            <li class="" (click)='showAddArticle()'>
+                <a [routerLink]="[menuItems[0].path]">
+                    <i class="material-icons">details</i>
+                    <p>Advertisment</p>
+                </a>
+            </li>
+
+            <li routerLinkActive="active" *ngFor="let adMenuItem of adMenuItems" class="{{adMenuItem.class}}">
+                <a [routerLink]="[adMenuItem.path]" *ngIf='showAddArticles'>
+                    <i class="material-icons">{{adMenuItem.icon}}</i>
+                    <p>{{adMenuItem.title}}</p>
+                </a>
+            </li>
+
+            <!--<hr *ngIf='showAllArticles'>
+            <li *ngIf='showAllArticles'>
+                <a [routerLink]="[menuItems[0].path]">
+                    <i class="material-icons">dashboard</i>
+
+                    <p>New Article</p>
+                </a>
+            </li>-->
+
         </ul>
     </div>
 </div>
