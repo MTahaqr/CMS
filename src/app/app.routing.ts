@@ -20,28 +20,22 @@ import { NewArticlesComponent } from './new-articles/new-articles.component';
 import { AddBannersComponent } from './add-banners/add-banners.component';
 import { MainComponent } from './main/main.component';
 import { SignInComponent } from './sign-in/sign-in.component';
-
+import { LandingComponent } from './landing/landing.component';
 
 
 
 const routes: Routes = [
+  { path: '', redirectTo: 'landing', pathMatch: 'full' },
+  { path: 'landing', component: LandingComponent },
   {
     path: 'dashboard', component: DashboardComponent,
-
   },
 
-
-  // { path: 'main/allArticles', component: AllArticlesComponent },
-  // { path: 'main/pending', component: PendingComponent },
-  // { path: 'draft', component: DraftComponent },
-  // { path: 'trash', component: TrashComponent },
-  // { path: 'newArticles', component: NewArticlesComponent },
-  // { path: 'addBanners', component: AddBannersComponent },
   {
     path: 'main', component: MainComponent,
     children: [
       { path: 'dashboard', component: DashboardComponent },
-      
+
       { path: 'allArticles', component: AllArticlesComponent },
       { path: 'published', component: PublishedComponent },
 
@@ -61,7 +55,6 @@ const routes: Routes = [
   { path: 'maps', component: MapsComponent },
   { path: 'notifications', component: NotificationsComponent },
   { path: 'upgrade', component: UpgradeComponent },
-  // { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 
 @NgModule({

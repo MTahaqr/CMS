@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
 })
 export class LandingComponent implements OnInit {
 
-  showLandingPage = true;
   constructor(
     private router: Router
   ) { }
@@ -16,7 +15,6 @@ export class LandingComponent implements OnInit {
   }
   toSignIn() {
     this.router.navigate(['./signIn']);
-    this.showLandingPage = false;
   }
 
 }

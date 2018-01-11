@@ -14,16 +14,6 @@ export const ROUTES: RouteInfo[] = [
     { path: 'draft', title: 'Draft', icon: 'person', class: '' },
     { path: 'trash', title: 'Trash', icon: 'person', class: '' },
     { path: 'newArticles', title: 'New Article', icon: 'person', class: 'new' },
-
-    // { path: 'user-profile', title: 'User Profile',  icon:'person', class: '' },
-    // { path: 'table-list', title: 'Table List',  icon:'content_paste', class: '' },
-    // { path: 'typography', title: 'Typography',  icon:'library_books', class: '' },
-    // { path: 'icons', title: 'Icons',  icon:'bubble_chart', class: '' },
-    // { path: 'maps', title: 'Maps',  icon:'location_on', class: '' },
-    // { path: 'notifications', title: 'Notifications',  icon:'notifications', class: '' },
-    // { path: 'upgrade', title: 'Upgrade to PRO',  icon:'unarchive', class: 'active-pro' },
-    // { path: 'upgrade', title: 'Upgrade to PRO',  icon:'unarchive', class: 'active-pro' },
-
 ];
 
 export const advRoutes: RouteInfo[] = [
