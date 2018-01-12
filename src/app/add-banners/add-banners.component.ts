@@ -12,4 +12,17 @@ export class AddBannersComponent implements OnInit {
   ngOnInit() {
   }
 
+  readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e: any) {
+        $('#blah')
+          .attr('src', e.target.result);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
 }

@@ -22,6 +22,8 @@ import { AllArticlesComponent } from './all-articles/all-articles.component';
 import { MatCardModule } from '@angular/material';
 import { MatFormFieldModule } from '@angular/material';
 import { MatInputModule } from '@angular/material';
+import { MatNativeDateModule } from '@angular/material';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material';
 import { MatDatepickerModule } from '@angular/material';
@@ -72,6 +74,7 @@ import { LandingComponent } from './landing/landing.component';
     MatFormFieldModule,
     MatDatepickerModule,
     MatInputModule,
+    MatNativeDateModule
     // MatMenuModule,
   ],
   providers: [],
